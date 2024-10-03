@@ -24,7 +24,7 @@ export default function Header() {
             return (
               <div key={index}>
                 <Link
-                  className="hover:underline text-xl font-light mx-0 text-gray-500 sm:mx-5"
+                  className="hover:underline text-xl font-light mx-0 text-gray-500 sm:mx-5 no-underline"
                   href={link.link}
                 >
                   {link.label}
