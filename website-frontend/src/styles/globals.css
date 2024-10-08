@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@font-face {
+  font-family: Poltawski-bold-italic;
+  src: url("/fonts/otf/UNCAGE-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: Poltawski-bold;
+  src: url("/fonts/otf/UNCAGE-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Absans-Regular;
+  src: url("/fonts/otf/Absans-Regular.otf") format("opentype");
+}
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Poltawski-bold-italic {
+  font-family: Poltawski-bold-italic;
+}
+.Poltawski-bold {
+  font-family: Poltawski-bold;
+}
+.Absans-Regular {
+  font-family: Absans-Regular;
+}
 
 @tailwind base;
 @tailwind components;
@@ -65,4 +93,19 @@ html {
 .btn-pricing:active {
   position: relative;
   top: 2px;
+}
+#company-info:nth-child(1) {
+  background: #000000;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+#company-info:nth-child(2) {
+  background: #111111;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+#company-info:nth-child(3) {
+  background: #333333;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }

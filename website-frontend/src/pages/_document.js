@@ -16,7 +16,7 @@ export default function Document() {
         <meta name="keywords" content="your,keywords,go,here" />
 
         {/* Tytuł strony (globalny) */}
-        <title>Wojpłot | Usługi ślusarskie</title>
+        <title>EUROpłot | Usługi ślusarskie</title>
 
         {/* Meta dla social mediów (Open Graph) */}
         <meta property="og:title" content="Your Social Media Title" />

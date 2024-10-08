@@ -11,7 +11,7 @@ const BlogPost: Block = {
       name: "heading",
       label: "Heading",
       type: "text",
-      maxLength: 30,
+      maxLength: 60,
     },
     {
       name: "text",
@@ -19,17 +19,17 @@ const BlogPost: Block = {
       type: "textarea",
     },
     {
-      name: "images", // Zmiana z "image" na "images"
+      name: "images",
       label: "Images",
-      type: "array", // Tablica, która zawiera wiele elementów
-      minRows: 1, // Możesz ustawić minimalną liczbę wierszy (minimum 1)
+      type: "array",
+      minRows: 1,
       fields: [
         {
           name: "image",
           label: "Image",
-          type: "upload", // Typ upload dla obrazu
+          type: "upload",
           relationTo: "media",
-          required: true, // Można ustawić jako wymagane
+          required: true,
         },
       ],
     },
