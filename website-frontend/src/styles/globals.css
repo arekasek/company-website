@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @font-face {
-  font-family: Poltawski-bold-italic;
+  font-family: UNCAGE-Bold;
   src: url("/fonts/otf/UNCAGE-Bold.otf") format("opentype");
 }
 @font-face {
-  font-family: Poltawski-bold;
+  font-family: UNCAGE;
   src: url("/fonts/otf/UNCAGE-SemiBold.otf") format("opentype");
 }
 
@@ -19,11 +19,11 @@
   font-weight: 400;
   font-style: normal;
 }
-.Poltawski-bold-italic {
-  font-family: Poltawski-bold-italic;
+.UNCAGE {
+  font-family: UNCAGE;
 }
-.Poltawski-bold {
-  font-family: Poltawski-bold;
+.UNCAGE-Bold {
+  font-family: UNCAGE-Bold;
 }
 .Absans-Regular {
   font-family: Absans-Regular;
@@ -93,45 +93,4 @@ html {
 .btn-pricing:active {
   position: relative;
   top: 2px;
-}
-#company-info:hover {
-}
-#company-info:nth-child(1) {
-  background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.95),
-      rgba(51, 51, 51, 0.95)
-    ),
-    url("/brama.jpg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-#company-info:nth-child(2) {
-  background: linear-gradient(
-      135deg,
-      rgba(17, 17, 17, 0.95),
-      rgba(68, 68, 68, 0.95)
-    ),
-    url("/brama2.jpg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
-}
-
-#company-info:nth-child(3) {
-  background: linear-gradient(
-      135deg,
-      rgba(51, 51, 51, 0.95),
-      rgba(85, 85, 85, 0.95)
-    ),
-    url("/brama3.jpg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }

@@ -17,6 +17,12 @@ const PricingBlock: Block = {
           label: "Description",
           type: "textarea",
         },
+        {
+          name: "image",
+          label: "Image of service",
+          type: "upload",
+          relationTo: "media",
+        },
       ],
     },
   ],

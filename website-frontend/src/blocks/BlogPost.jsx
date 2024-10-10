@@ -24,7 +24,7 @@ const TwoColumn = ({ heading, text, images, direction }) => {
         ))}
       </Carousel>
 
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center Poltawski-bold-italic">
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center UNCAGE-Bold">
         <div className="w-[50vw] text-center h-fit text-white flex flex-col items-center gap-3">
           <h1 className="text-7xl font-extrabold">{heading}</h1>
           <p className="text-xl w-3/5 Absans-Regular font-medium">{text}</p>

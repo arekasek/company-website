@@ -1,4 +1,5 @@
 import Header from "@/blocks/global/Header";
+import Contact from "@/blocks/global/Contact";
 import "@/styles/globals.css";
 import axios from "axios";
 import Footer from "@/blocks/global/Footer";
@@ -19,6 +20,8 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </div>
       </div>
+
+      <Contact />
       <Sidebar></Sidebar>
       <Footer />
     </>
