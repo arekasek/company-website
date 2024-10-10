@@ -17,7 +17,7 @@ export default function Contact() {
       ></iframe>
       <div className="w-[50%] bg-slate-200 p-4 flex flex-col justify-center">
         <h1 className="text-7xl UNCAGE-Bold">Kontakt</h1>
-        <div className="text-2xl Absans-Regular">
+        <div className="text-2xl Absans-Regular font-semibold">
           <p>Woj-Płot Ogrodzenia Balustrady Kowalstwo - Wojciech Asmus</p>
           <p>Telefon: 609 693 204</p>
           <p>Email: wojplot@wp.pl</p>
