@@ -94,3 +94,47 @@ html {
   position: relative;
   top: 2px;
 }
+.shadow-main-categories {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+@keyframes backgroundMove {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: center 5px;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+.animate-background-move {
+  animation: backgroundMove 10s ease-in-out infinite;
+}
+
+#header .nav-link {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+  --tw-text-opacity: 1;
+  color: rgb(107, 114, 128);
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 300;
+}
+.text-about {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-about:hover {
+  transform: scale(1.03);
+}
+.text-about-container {
+  padding: 1.5rem;
+}
+.text-grid-container {
+  gap: 0;
+}

@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import header from "@/globalData/header.json";
 import Link from "next/link";
-import Image from "next/image";
+import { gsap } from "gsap";
 import Headroom from "react-headroom";
 
 export default function Header() {
+  useEffect(() => {
+    const links = document.querySelectorAll(".nav-link");
+
+    gsap.set(links, { opacity: 0, y: -20 });
+
+    gsap.fromTo(
+      links,
+      {
+        opacity: 0,
+        y: -20,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.9,
+        stagger: 0.3,
+        ease: "power3.out",
+      }
+    );
+  }, []);
+
   return (
     <Headroom id="header">
       <div className="w-full h-[10vh] sticky bg-gray-100 z-10 p-5 text-center flex justify-between md:justify-evenly items-center shadow-md top-0">
@@ -24,7 +45,7 @@ export default function Header() {
             return (
               <div key={index}>
                 <Link
-                  className="hover:underline text-xl font-light mx-0 text-gray-500 sm:mx-5 no-underline"
+                  className="hover:underline mx-0 text-gray-500 sm:mx-5 nav-link"
                   href={link.link}
                 >
                   {link.label}
