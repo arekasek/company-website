@@ -4,7 +4,7 @@ import BlogPost from "../blocks/BlogPost";
 import Gallery from "../blocks/Gallery";
 import PauseBlock from "../blocks/PauseBlock";
 import { CollectionConfig } from "payload/types";
-
+import Show from "../blocks/Show";
 const Pages: CollectionConfig = {
   slug: "pages",
   labels: {
@@ -31,7 +31,14 @@ const Pages: CollectionConfig = {
       name: "layout",
       label: "Layout",
       type: "blocks",
-      blocks: [PricingBlock, BlogPost, SimpleRichText, Gallery, PauseBlock],
+      blocks: [
+        PricingBlock,
+        BlogPost,
+        SimpleRichText,
+        Gallery,
+        PauseBlock,
+        Show,
+      ],
     },
   ],
 };

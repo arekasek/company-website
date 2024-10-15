@@ -23,6 +23,12 @@ const PricingBlock: Block = {
           type: "upload",
           relationTo: "media",
         },
+        {
+          name: "pageLink",
+          label: "Page Link",
+          type: "relationship",
+          relationTo: "pages",
+        },
       ],
     },
   ],

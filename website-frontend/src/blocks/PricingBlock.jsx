@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { gsap } from "gsap/dist/gsap"; // Używamy wersji UMD GSAP
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; // Używamy wersji UMD ScrollTrigger
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,22 +40,24 @@ const PricingBlock = ({ pricingItems }) => {
             key={index}
             className="relative hover:cursor-pointer group pricing-item"
           >
-            <div
-              id="company-info"
-              className="shadow-main-categories w-full h-[35vh] text-justify bg-center z-0 filter brightness-50 contrast-50 saturate-50 group-hover:scale-105 group-hover:brightness-50 group-hover:contrast-100 group-hover:saturate-100 transition-all duration-500 ease-in-out"
-              style={{
-                backgroundImage: `url(${item.image.url})`,
-                backgroundSize: "cover",
-              }}
-            ></div>
+            <a href={item.pageLink.slug}>
+              <div
+                id="company-info"
+                className="shadow-main-categories w-full h-[35vh] text-justify bg-center z-0 filter brightness-50 contrast-50 saturate-50 group-hover:scale-105 group-hover:brightness-50 group-hover:contrast-100 group-hover:saturate-100 transition-all duration-500 ease-in-out"
+                style={{
+                  backgroundImage: `url(${item.image.url})`,
+                  backgroundSize: "cover",
+                }}
+              ></div>
 
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 text-white text-center Absans-Regular font-bold group-hover:text-3xl transition-all duration-500 ease-in-out">
-              {item.description}
-            </span>
+              <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 text-white text-center Absans-Regular font-bold group-hover:text-3xl transition-all duration-500 ease-in-out">
+                {item.description}
+              </span>
 
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-10 text-white text-center Absans-Regular text-sm font-thin hover:underline">
-              Zobacz więcej
-            </span>
+              <span className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-10 text-white text-center Absans-Regular text-sm font-thin hover:underline">
+                Zobacz więcej
+              </span>
+            </a>
           </div>
         ))}
       </div>
