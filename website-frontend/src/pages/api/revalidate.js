@@ -1,7 +1,6 @@
 export default async function (req, res) {
   const slug = req.query.slug;
 
-  // Check for secret to confirm this is a valid request
   if (req.query.secret !== process.env.FRONTEND_SECRET) {
     return res.status(401).json({ message: "Invalid token" });
   } else if (!slug) {
